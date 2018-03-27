@@ -116,14 +116,19 @@ for (i = 0; i <bondFilms.length; i ++) {
 	console.log(oddBonds);
 }
 */
+const add = (a, b) => {
+	a + b;
+};
 
+for (let i = 0; i < bondFilms.length; i ++) {
+	let bondGross = bondFilms[i].gross.replace('$', '').replace(/,/g, '');
+	let bondSum = bondGross.reduce(function(total, amount) {
+		return total + amount;
+	});
+};
 
+console.log(bondSum);
 
-
-
-
-
-
-
+//I tried several different ways, but I keep getting errors about bondGross.reduce not being a function :(
 
 
