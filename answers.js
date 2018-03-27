@@ -76,7 +76,7 @@ const inception = {
 
 inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo = null;
 console.log(inception.reality.dreamLayer1.dreamLayer2.dreamLayer3.dreamLayer4.dreamLayer5.dreamLayer6.limbo);
-
+*/
 //Bond Films
 const bondFilms = [
   { "title" : "Skyfall", "year" : 2012, "actor" : "Daniel Craig", "gross" : "$1,108,561,008" },
@@ -103,12 +103,20 @@ const bondFilms = [
   { "title" : "A View to a Kill", "year" : 1985, "actor" : "Roger Moore", "gross" : "$321,172,633" },
   { "title" : "License to Kill", "year" : 1989, "actor" : "Timothy Dalton", "gross" : "$285,157,191" }
 ];
-
+/*
 for (i = 0; i < bondFilms.length; i ++) {
 	let bondTitles = bondFilms[i]["title"];
 	console.log("title." + bondTitles);
 };
+
+//not working, returns all films
+for (i = 0; i <bondFilms.length; i ++) {
+	if (bondFilms[i]["year"] % 2 != 1);
+	let oddBonds = bondFilms[i];
+	console.log(oddBonds);
+}
 */
+
 
 
 
